@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: postgres:15
+    ports:
+      - 5555:5432
+    environment:
+      POSTGRES: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: nestjs
